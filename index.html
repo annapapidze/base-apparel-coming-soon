@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Base Apparel coming soon</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="./images/logo.svg" alt="logo"/>
+  </header>
+  <main>
+    <div class="img_div">
+      <img class="main_img1" src="./images/hero-mobile.jpg" alt="hero" />
+      <img class="main_img2" src="./images/hero-desktop.jpg" alt="hero" />
+    </div>
+    <div class="text_div">
+      <h1 class="heading"><span id="span">WE'RE<br></span>COMING SOON</h1>
+      <p class="para">Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+    </div>
+    <div class="main_email">
+      <div id="email_div">
+        <input type="email" id="email_id" placeholder="Email Address" oninput="chacker()">
+        <button id="arrow_div">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
+            <path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </main>
+  <div id="error_div">
+    <p id="error1">Please provide a valid email</p>
+    <p id="success_p">your email is sent</p>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>

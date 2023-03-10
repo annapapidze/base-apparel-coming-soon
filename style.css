@@ -1,0 +1,239 @@
+    /* mobile version */
+
+body {
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+    height: 800px;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin: 31px 0 32px 32px;
+}
+
+.img_div {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 250px;
+}
+
+.main_img1 {
+    width: 100vw;
+}
+
+.main_img2 {
+    display: none;
+}
+
+.text_div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 64px 32px 32px 32px;
+}
+
+.heading {
+    color: #423A3A;
+    font-family: "Josefin Sans";
+    text-align: center;
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: 600;
+    letter-spacing: 11px;
+}
+
+#span {
+    color: #CE9898;
+    font-weight: 300;
+}
+
+.para {
+    color: #CE9898;
+    font-family: "Josefin Sans";
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.main_email {
+    display: flex;
+    justify-content: center;
+}
+
+#email_div {
+    display: flex;
+    position: relative;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border: 1px solid #CE9898;
+    border-radius: 28px;
+    width: 311px;
+    height: 48px;
+}
+
+#email_id {
+    color: #CE9898;
+    font-family: "Josefin Sans";
+    background: none;
+    border-radius: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-left: 24px;
+    mix-blend-mode: normal;
+    width: 311px;
+}
+
+#arrow_div {
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0px 15px 20px 0px #C66E6E3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 28px;
+    border: none;
+    top: 0%;
+    left: 80%;
+    width: 64px;
+    height: 48px;
+}
+
+#error_div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    margin-top: 8px;
+    margin-left: 56px;
+    margin-bottom: 71px;
+    width: 165px;
+    height: 13px;
+}
+
+#error1 {
+    display: none;
+    color: #F96464;
+    font-family: "Josefin Sans";
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+}
+
+#success_p {
+    display: none;
+    color: green;
+    font-family: "Josefin Sans";
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+}
+
+.success {
+    border: 2px solid green;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+    /* desktop version */
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-size: calc(62%);
+        background-repeat: no-repeat;
+    }
+
+    .logo {
+        margin-top: 75px;
+        margin-left: 165px;
+        width: 158px;
+        height: 33px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .img_div {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: right;
+        position: absolute;
+        top: 0;
+    }
+
+    .main_img1 {
+        display: none;
+    }
+
+    .main_img2 {
+        display: block;
+        width: 610px;
+        height: 100vh;
+    }
+
+    .text_div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+        top: 180px;
+        left: 150px;
+        width: 445px;
+        height: 404px;
+        gap: 32px;
+    }
+
+    .heading {
+        font-size: 64px;
+        line-height: 71px;
+        text-align: left;
+        letter-spacing: 17.32px;
+    }
+
+    #span {
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: 17.32px;
+    }
+
+    .para {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: left;
+    }
+
+    .main_email {
+        position: absolute;
+        top: 600px;
+        left: 190px;
+    }
+
+    #email_div {
+        width: 445px;
+        height: 56px;
+    }
+
+    #email_id {
+        width: 445px;
+    }
+
+    #arrow_div {
+        cursor: pointer;
+        width: 100px;
+        height: 56px;
+    }
+
+    #error_div {
+        position: absolute;
+        top: 655px;
+        left: 170px;
+    }
+
+
+}
